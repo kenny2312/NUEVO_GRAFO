@@ -11,4 +11,31 @@ package grafo_base;
  */
 public class Lista_e {
     
+   Nodo cabecera;
+   
+   public void add(){
+      Nodo tmp =cabecera;
+       
+       if(tmp==null){
+           
+           tmp=cabecera;
+           
+       }else{
+           
+           
+       }
+       
+       
+       
+       
+   }
+    
+   
+   public void Es_vacia(){
+       
+       
+       System.out.println("la listar es vacia");
+       
+   }
+    
 }

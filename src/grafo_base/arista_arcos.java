@@ -39,12 +39,17 @@ public class arista_arcos {
             System.out.println("|");
         }
    }
+   int i=0;
       public void agregar_nodo() {
+          /*
         for (int i = 0; i < lista_de_nodos.length; i++) {
             if (lista_de_nodos[i] == null) {
                 lista_de_nodos[i] = nodo;
             }
         }
+*/
+          lista_de_nodos[i++] = nodo;
+          
     }
     public void agregar(  int x,int destino,Nodo nodo){
      
