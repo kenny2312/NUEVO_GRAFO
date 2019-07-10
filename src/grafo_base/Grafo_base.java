@@ -22,7 +22,7 @@ public class Grafo_base {
         arista_arcos  al = new  arista_arcos();
         
       al.crearEstructura();
-      
+      Lista_e ll =new Lista_e();
       
     Nodo pp = new Nodo();
       
@@ -40,7 +40,7 @@ public class Grafo_base {
             x=teclado.nextInt();
             switch (x) {
                 case 1:
-
+/*
                     int destino=0;
                     System.out.println("ingrese nombre del nodo");
                     
@@ -52,9 +52,14 @@ public class Grafo_base {
                  destino=teclado.nextInt();
                  
                     al.agregar(0, destino, pp);
+*/
+                    ll.insertar();
+                    
+                    
                     break;
                     case 2:
-                     al.listar();
+                        ll.listar();
+                   //  al.listar();
                     break;
                     case 3:
                  //   al.agregar_Camino_nuevo(n, x);

@@ -19,7 +19,7 @@ public class Nodo {
     
     int destino;//destino
     
-   
+   Nodo siguiente;
 
     public Nodo() {
         
