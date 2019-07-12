@@ -36,7 +36,8 @@ public class Grafo_base {
             System.out.println("3.nuevo camino");
             System.out.println("4.listar nodos");
             System.out.println("5.con quien esta conectado");
-             System.out.println("6.listar salir");
+            System.out.println("6.buscar");
+             System.out.println("7.listar salir");
             x=teclado.nextInt();
             switch (x) {
                 case 1:
@@ -58,19 +59,23 @@ public class Grafo_base {
                     
                     break;
                     case 2:
-                        ll.listar();
-                   //  al.listar();
+                        
+                     al.listar();
                     break;
                     case 3:
                  //   al.agregar_Camino_nuevo(n, x);
                     break;
                      case 4:
+                 //   al.listar_nodos();
+                          ll.listar();
+                    break;
+                     case 6:
                     al.listar_nodos();
                     break;
             }
             
             
-        }while(x!=6);
+        }while(x!=7);
         
         
     }

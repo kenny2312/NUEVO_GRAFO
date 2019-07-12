@@ -11,12 +11,19 @@ package grafo_base;
  */
 public class arista_arcos {
     
-    
+   
     int destino;
    private  Nodo nodo;
    
    int matriz[][] = new int[5][5];
    Nodo lista_de_nodos []= new Nodo[5];
+
+    public arista_arcos(int destino, Nodo nodo) {
+        this.destino = destino;
+        this.nodo = nodo;
+    }
+   
+   
    public void crearEstructura(){
           for (int i = 0; i < 5; i++) {
             for (int j = 0; j < matriz.length; j++) {
