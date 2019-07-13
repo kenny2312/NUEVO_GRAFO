@@ -18,10 +18,7 @@ public class arista_arcos {
    int matriz[][] = new int[5][5];
    Nodo lista_de_nodos []= new Nodo[5];
 
-    public arista_arcos(int destino, Nodo nodo) {
-        this.destino = destino;
-        this.nodo = nodo;
-    }
+   
    
    
    public void crearEstructura(){

@@ -29,7 +29,7 @@ public class Lista_e {
             } else {
                 while (tmp.siguiente != null) {
                     System.out.println("entro");
-                    tmp = tmp.siguiente;//le pones null al temporL
+                    tmp = tmp.siguiente;//le pones null al temporL final
                     c++;
                 }
                 System.out.println("salio");
@@ -46,9 +46,9 @@ public class Lista_e {
         Nodo temp = cabecera;
 
         while (temp != null) {
-
+            System.out.print("Nodo -->");
             System.out.println("" + temp.p.getNombre());
-
+            System.out.println("");
             temp = temp.siguiente;
 
         }
@@ -73,8 +73,11 @@ public class Lista_e {
     }
 
     public void Es_vacia() {
-
-        System.out.println("la listar es vacia");
+     Nodo tmp = cabecera;
+         if(tmp==null){
+             System.out.println("la listar es vacia");
+         }
+        
 
     }
     
@@ -88,7 +91,7 @@ public class Lista_e {
        System.out.println("" + temp.p.getApellido());
        
        
-       
+       //no esta terminado
        
    }
             
@@ -103,7 +106,7 @@ public class Lista_e {
 
         while (temp != null) {
    if (nombre.equals(temp.p.getNombre())){
-       System.out.println("" + temp.p.getApellido());
+       System.out.println("Apellido: -->" + temp.p.getApellido());
        break;
    }
             

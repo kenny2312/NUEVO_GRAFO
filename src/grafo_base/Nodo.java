@@ -13,7 +13,7 @@ public class Nodo {
     
     Persona p=new Persona();
     
-    arista_arcos  a = new  arista_arcos();
+   // arista_arcos  a = new  arista_arcos();
     
     int numero_nodo;//origen
     

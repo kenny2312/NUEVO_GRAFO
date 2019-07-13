@@ -36,7 +36,7 @@ public class Grafo_base {
             System.out.println("3.nuevo camino");
             System.out.println("4.listar nodos");
             System.out.println("5.con quien esta conectado");
-            System.out.println("6.buscar");
+            System.out.println("6.buscar nodo");
              System.out.println("7.listar salir");
             x=teclado.nextInt();
             switch (x) {
@@ -70,12 +70,17 @@ public class Grafo_base {
                           ll.listar();
                     break;
                      case 6:
-                    al.listar_nodos();
+                    //al.listar_nodos();
+                         
+                         String nombre = null ; 
+                         System.out.println("ingrese nombre :");
+                         nombre  = teclado.next();
+                         ll.buscar(nombre);
                     break;
             }
             
             
-        }while(x!=7);
+        }while(x!=6);
         
         
     }
