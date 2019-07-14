@@ -84,21 +84,33 @@ public class Lista_e {
     
     public void eliminar(String nombre){
         
-        Nodo temp = cabecera;
-
-        while (temp != null) {
-   if (nombre.equals(temp.p.getNombre())){
-       System.out.println("" + temp.p.getApellido());
-       
-       
-       //no esta terminado
-       
-   }
-            
-
-            temp = temp.siguiente;
-        
-      }  
+     boolean encontrado=false;
+     if(cabecera.p.getNombre().compareTo(nombre)==0){
+         cabecera= cabecera.siguiente;
+         encontrado=true;
+     }else{
+         Nodo tmp,ant;
+         ant=cabecera;
+         tmp=cabecera.siguiente;
+         
+         while(tmp!=null &&tmp.p.getNombre().compareTo(nombre)!=0){
+             ant=ant.siguiente;
+             tmp=tmp.siguiente;
+             encontrado=true;
+             
+             
+         }
+         if(tmp!=null){
+             ant.siguiente=tmp.siguiente;
+             encontrado=true;
+             if(tmp.siguiente==null){
+                 encontrado=true;
+                 tmp=ant;
+             }
+         }
+         //cebolla
+     }
+     
     }
     public void buscar(String nombre){
         
