@@ -83,22 +83,63 @@ public class Lista_e {
     
     
     public void eliminar(String nombre){
-        
+        /*
         Nodo temp = cabecera;
-
-        while (temp != null) {
-   if (nombre.equals(temp.p.getNombre())){
-       System.out.println("" + temp.p.getApellido());
+         Nodo anterior = null;
+         boolean encontrado=false;
+         
+         encontrado=(nombre.equals(temp.p.getNombre()));
+        while (temp != null && (!encontrado)) {
+            
+            
+   if (!encontrado){
        
-       
+       anterior=temp;
+       temp=temp.siguiente;
        //no esta terminado
        
    }
-            
-
-            temp = temp.siguiente;
+   }
+          if(temp!=null){
+              if(temp==cabecera){
+                  cabecera=temp.siguiente;
+              }else{
+                  anterior.siguiente=temp.siguiente.;
+              }
+               temp=null;
+          }
+           
+*/
+          //temp = temp.siguiente;
         
-      }  
+      Nodo tmp=cabecera;
+      Nodo anterior=null;
+      while(tmp!=null){
+          
+          if(nombre.equals(tmp.p.getNombre())){
+              eliminar2(anterior,tmp);
+          }else{
+              anterior=tmp;
+              tmp=tmp.siguiente;
+          }
+      }
+          
+          
+          
+          
+          
+          
+    }
+    public boolean eliminar2(Nodo ant,Nodo nodovay){
+        
+        if(ant==null){
+            ant=ant.siguiente;
+            
+           return true;
+        }else{
+            ant.siguiente=nodovay.siguiente;
+           return true; 
+        }
     }
     public void buscar(String nombre){
         

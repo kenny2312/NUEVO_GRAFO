@@ -77,10 +77,17 @@ public class Grafo_base {
                          nombre  = teclado.next();
                          ll.buscar(nombre);
                     break;
+                    
+                     case 7:
+                          String nombre2 = ""; 
+                         System.out.println("ingrese nombre :");
+                         nombre2  = teclado.next();
+                    ll.eliminar(nombre2);
+                    break;
             }
             
             
-        }while(x!=6);
+        }while(x!=8);
         
         
     }
