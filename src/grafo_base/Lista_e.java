@@ -83,6 +83,7 @@ public class Lista_e {
     
     
     public void eliminar(String nombre){
+<<<<<<< HEAD
         /*
         Nodo temp = cabecera;
          Nodo anterior = null;
@@ -140,6 +141,36 @@ public class Lista_e {
             ant.siguiente=nodovay.siguiente;
            return true; 
         }
+=======
+        
+     boolean encontrado=false;
+     if(cabecera.p.getNombre().compareTo(nombre)==0){
+         cabecera= cabecera.siguiente;
+         encontrado=true;
+     }else{
+         Nodo tmp,ant;
+         ant=cabecera;
+         tmp=cabecera.siguiente;
+         
+         while(tmp!=null &&tmp.p.getNombre().compareTo(nombre)!=0){
+             ant=ant.siguiente;
+             tmp=tmp.siguiente;
+             encontrado=true;
+             
+             
+         }
+         if(tmp!=null){
+             ant.siguiente=tmp.siguiente;
+             encontrado=true;
+             if(tmp.siguiente==null){
+                 encontrado=true;
+                 tmp=ant;
+             }
+         }
+         //cebolla
+     }
+     
+>>>>>>> 62eabaa8869b78636adcfe81ab6842b15c0b722e
     }
     public void buscar(String nombre){
         

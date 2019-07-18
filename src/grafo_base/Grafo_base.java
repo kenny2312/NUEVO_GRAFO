@@ -37,7 +37,8 @@ public class Grafo_base {
             System.out.println("4.listar nodos");
             System.out.println("5.con quien esta conectado");
             System.out.println("6.buscar nodo");
-             System.out.println("7.listar salir");
+            System.out.println("7.eliminar");
+             System.out.println("8.listar salir");
             x=teclado.nextInt();
             switch (x) {
                 case 1:
@@ -77,6 +78,7 @@ public class Grafo_base {
                          nombre  = teclado.next();
                          ll.buscar(nombre);
                     break;
+<<<<<<< HEAD
                     
                      case 7:
                           String nombre2 = ""; 
@@ -84,6 +86,13 @@ public class Grafo_base {
                          nombre2  = teclado.next();
                     ll.eliminar(nombre2);
                     break;
+=======
+                     case 7:
+                         System.out.println("ingrese nombre");
+                         String n=teclado.next();
+                         ll.eliminar(n);
+                         break;
+>>>>>>> 62eabaa8869b78636adcfe81ab6842b15c0b722e
             }
             
             
